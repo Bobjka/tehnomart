@@ -195,6 +195,7 @@ body {
   height: 44px;
   box-sizing: border-box;
   background-color: #293449;
+  color: transparent;
   border: none;
   padding: 0 0 0 53px;
 }
@@ -216,6 +217,7 @@ body {
 .field:focus-visible {
   outline: none;
   background-color: #F3F7F9;
+  color: #293449;
 }
 
 .field::placeholder {
