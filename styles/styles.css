@@ -98,6 +98,52 @@ body {
   opacity: 0.3;
 }
 
+/*Поиск и авторизация*/
+
+.header-user {
+  background-color: #293449;
+}
+
+.header-user-wrap {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+}
+
+.header-logo-link {
+  display: block;
+  background-color: #EE3643;
+  width: 219px;
+  height: 45px;
+  position: relative;
+}
+
+.header-logo-link::before {
+  width: 100%;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #B52933;
+  bottom: -5px;
+  left: 0;
+}
+
+.header-logo {
+  display: block;
+  position: absolute;
+  left: 54px;
+  top: 12px;
+}
+
+/*Навигация*/
+
+.navigation {
+  display: block;
+  width: 1400px;
+  height: 70px;
+  background-color: #3D546F;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
