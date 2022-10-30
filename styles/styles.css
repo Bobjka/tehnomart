@@ -220,9 +220,29 @@ body {
   color: #293449;
 }
 
-.field::placeholder {
+/*Аккаунт*/
 
+.header-user-enter {
+  margin-left: auto;
 }
+
+.user-enter-button {
+  margin: 14px 2px 13px 0;
+  padding: 0 0 0 26px;
+  border: none;
+  background-color: #293449;
+  color: #F1F5F7;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-image: url("../images/icons/enter-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+}
+
 
 /*Навигация*/
 
