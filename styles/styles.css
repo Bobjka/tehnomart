@@ -102,6 +102,7 @@ body {
 
 .header-user {
   background-color: #293449;
+  display: flex;
 }
 
 .header-user-wrap {
@@ -124,8 +125,21 @@ body {
   content: "";
   position: absolute;
   background-color: #B52933;
-  bottom: -5px;
+  bottom: -4px;
   left: 0;
+}
+
+.header-logo-link:hover {
+  opacity: 0.6;
+}
+
+.header-logo-link:active {
+  opacity: 0.3;
+}
+
+.header-logo-link:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: -1px;
 }
 
 .header-logo {
@@ -135,6 +149,79 @@ body {
   top: 12px;
 }
 
+/*Поиск*/
+
+.header-user-form {
+  position: relative;
+}
+
+.header-user-form:focus-within .search-icon {
+  color: #405069;
+}
+
+.header-user-form:focus-within .field::placeholder {
+  color: #3D546F;
+}
+
+.header-user-form:focus-within .user-form-label {
+  display: none;
+}
+
+.header-user-form:focus-within .field {
+  padding: 0 0 0 65px;
+}
+
+.search-icon {
+  color: #ffffff;
+  position: absolute;
+  left: 21px;
+  top: 12px;
+}
+
+.user-form-label {
+  position: absolute;
+  left: 53px;
+  top: 9px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 716px;
+  height: 44px;
+  box-sizing: border-box;
+  background-color: #293449;
+  border: none;
+  padding: 0 0 0 53px;
+}
+
+.field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  position: relative;
+  right: 16px;
+  background-image: url("../images/icons/delete-icon.svg");
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+}
+
+.field::placeholder {
+  color: transparent;
+}
+
+.field:focus-visible {
+  outline: none;
+  background-color: #F3F7F9;
+}
+
+.field::placeholder {
+
+}
+
 /*Навигация*/
 
 .navigation {
@@ -142,6 +229,7 @@ body {
   width: 1400px;
   height: 70px;
   background-color: #3D546F;
+  margin-top: -1px;
 }
 
 .visually-hidden {
