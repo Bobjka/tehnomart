@@ -30,7 +30,7 @@
   font-display: swap;
 }
 
-.body {
+body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -39,3 +39,75 @@
   background-color: #ffffff;
   width: 1400px;
 }
+
+/*Адрес и контакты*/
+
+.header-contacts {
+  background-color: #F3F7F9;
+}
+
+.header-contacts-wrap {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+  background-color: #F3F7F9;
+}
+
+.header-title {
+  font-style: italic;
+  font-weight: 400;
+  color: #EE3643;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 14px auto 13px 2px;
+  display: block;
+  max-width: 600px;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #32425C;
+  margin: 12px 35px 15px 0;
+  display: block;
+  max-width: 275px;
+}
+
+.header-phone {
+  font-weight: 700;
+  line-height: 18px;
+  color: #293449;
+  text-decoration: none;
+  margin: 13px 2px 14px 0;
+  letter-spacing: 2px;
+  padding-left: 24px;
+  background-image: url("/images/icons/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 0 1px;
+  display: block;
+  max-width: 174px;
+}
+
+.header-phone:hover {
+  opacity: 0.6;
+}
+
+.header-phone:active {
+  opacity: 0.3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
