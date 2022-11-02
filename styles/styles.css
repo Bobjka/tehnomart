@@ -438,12 +438,12 @@ body {
   padding: 11px 5px 11px 10px;
 }
 
-:is(.user-close-button, .user-registered-button,):hover {
+:is(.user-close-button, .user-registered-button):hover {
   color: #C5C5C5;
   background-color: #32425C;
 }
 
-:is(.user-close-button, .user-registered-button,):active {
+:is(.user-close-button, .user-registered-button):active {
   opacity: 0.6;
 }
 
@@ -510,11 +510,127 @@ body {
 /*Навигация*/
 
 .navigation {
-  display: block;
   width: 1400px;
-  height: 70px;
   background-color: #3D546F;
 }
+
+.navigation-wrap {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+}
+
+.navigation-list {
+  margin: 0 0 0 -17px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 840px;
+}
+
+.navigation-item {
+  margin: 20px 0 26px 0;
+}
+
+.navigation-item:nth-child(1) {
+  margin-right: 10px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 9px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-right: 9px;
+}
+
+.navigation-item:nth-child(4) {
+  margin-right: 5px;
+}
+
+.navigation-item:nth-child(5) {
+  margin-right: 4px;
+}
+
+.navigation-item:nth-child(6) {
+  margin-right: 8px;
+}
+
+.navigation-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 21px 21px 27px 21px;
+}
+
+.navigation-link:hover {
+  color: #C5C5C5;
+  background-color: #32425C;
+}
+
+.navigation-link:active {
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.1px;
+}
+
+/*Избранное*/
+
+.navigation-user {
+  margin: 11px 0 2px auto;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  max-width: 340px;
+}
+
+:is(.navigation-user-favorites, .navigation-user-basket) {
+  background-color: transparent;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 12px 12px 12px;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.user-favorites {
+  letter-spacing: 2px;
+  margin: 0 4px 0 7px;
+}
+
+.user-basket {
+  letter-spacing: 2px;
+  margin: 0 9px 0 6px;
+}
+
+:is(.user-favorites, .user-basket) {
+  display: none;
+}
+
+.user-icon {
+  opacity: 0.6;
+}
+
+.navigation-user-favorites {
+  margin-right: 3px;
+}
+
+.navigation-user-basket {
+  margin-right: 14px;
+}
+
+.navigation-user-button {
+  padding: 12px 12px;
+  border-radius: 4px;
+  margin-right: 2px;
+  margin-bottom: 14px;
+}
+
+/*Остальное*/
 
 .user-current {
   display: flex;
