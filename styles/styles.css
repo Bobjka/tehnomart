@@ -125,7 +125,7 @@ body {
   content: "";
   position: absolute;
   background-color: #B52933;
-  bottom: -4px;
+  bottom: -5px;
   left: 0;
 }
 
@@ -192,7 +192,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   width: 716px;
-  height: 44px;
+  height: 45px;
   box-sizing: border-box;
   background-color: #293449;
   color: transparent;
@@ -228,6 +228,7 @@ body {
 }
 
 .user-enter-button {
+  display: none;
   margin: 14px 2px 13px 0;
   padding: 0 0 0 26px;
   border: none;
@@ -242,9 +243,14 @@ body {
   background-image: url("../images/icons/enter-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 -1px;
+  text-transform: uppercase;
 }
 
-/*Вход в аккуант*/
+.user-current {
+  display: block;
+}
+
+/*Поповер авторизации*/
 
 .user-enter-popover {
   display: none;
@@ -398,6 +404,51 @@ body {
   border: 2px solid #C5C5C5;
 }
 
+/*Авторизированный пользователь*/
+
+.header-user-registered {
+  display: flex;
+}
+
+.user-registered-button {
+  background-color: transparent;
+  border: none;
+  color: #F1F5F7;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 11px 8px 10px 33px;
+  background-image: url("../images/icons/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 14px;
+  cursor: pointer;
+}
+
+.user-close-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 11px 5px 11px 10px;
+}
+
+:is(.user-close-button, .user-registered-button):hover {
+  color: #C5C5C5;
+  background-color: #32425C;
+}
+
+:is(.user-close-button, .user-registered-button):active {
+  opacity: 0.6;
+}
+
+.close-button-icon {
+  display: block;
+}
+
+/*Поповер авторизированного пользователя*/
+
+
+
 /*Навигация*/
 
 .navigation {
@@ -405,7 +456,6 @@ body {
   width: 1400px;
   height: 70px;
   background-color: #3D546F;
-  margin-top: -1px;
 }
 
 .visually-hidden {
