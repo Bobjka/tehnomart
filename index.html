@@ -28,7 +28,8 @@
         </form>
 <!--Аккаунт-->
         <div class="header-user-enter">
-          <button class="user-enter-button user-curren" type="button">Войти</button>
+<!--          Авторизация-->
+          <button class="user-enter-button user-current" type="button">Войти</button>
 <!--          Поповер авторизации-->
           <div class="user-enter-popover">
             <h2 class="user-enter-title">личный кабинет</h2>
@@ -64,6 +65,22 @@
               <span class="visually-hidden">Выйти из аккаунта.</span>
               <svg class="close-button-icon" width="17" height="17" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.19 14.39h-5v-12h5v-2h-7v16h7v-2Zm4.7-1.71L8.65 9.44h7.52v-2H8.65l3.24-3.25-1.42-1.41-4.94 4.95-.7.7.7.71 4.94 4.95 1.42-1.41Z"/></svg>            </button>
             <!--          Поповер авторизированного пользователя-->
+            <div class="user-registered-popover">
+              <h2 class="visually-hidden">личный кабинет</h2>
+              <p class="user-registered-title">Здравствуйте, <br>Равшан Джамшутович</p>
+              <button class="button-close" type="button">
+                <span class="visually-hidden">Закрыть окно.</span>
+              </button>
+              <ul class="user-registered-list">
+                <li class="user-registered-item">
+                  <a class="user-registered-link" href="#">мои заказы</a>
+                </li>
+                <li class="user-registered-item">
+                  <a class="user-registered-link" href="#">личный кабинет</a>
+                </li>
+              </ul>
+              <button class="button-border popover-button">выйти</button>
+            </div>
           </div>
         </div>
       </div>

@@ -227,10 +227,11 @@ body {
   position: relative;
 }
 
+/*Авторизация*/
+
 .user-enter-button {
   display: none;
-  margin: 14px 2px 13px 0;
-  padding: 0 0 0 26px;
+  padding: 14px 2px 13px 26px;
   border: none;
   background-color: #293449;
   color: #F1F5F7;
@@ -242,12 +243,17 @@ body {
   cursor: pointer;
   background-image: url("../images/icons/enter-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 -1px;
+  background-position: 0 13px;
   text-transform: uppercase;
 }
 
-.user-current {
-  display: block;
+.user-enter-button:hover {
+  opacity: 0.6;
+  background-color: #32425C;
+}
+
+.user-enter-button:active {
+  opacity: 0.3;
 }
 
 /*Поповер авторизации*/
@@ -407,7 +413,7 @@ body {
 /*Авторизированный пользователь*/
 
 .header-user-registered {
-  display: flex;
+  display: none;
 }
 
 .user-registered-button {
@@ -432,12 +438,12 @@ body {
   padding: 11px 5px 11px 10px;
 }
 
-:is(.user-close-button, .user-registered-button):hover {
+:is(.user-close-button, .user-registered-button,):hover {
   color: #C5C5C5;
   background-color: #32425C;
 }
 
-:is(.user-close-button, .user-registered-button):active {
+:is(.user-close-button, .user-registered-button,):active {
   opacity: 0.6;
 }
 
@@ -447,7 +453,59 @@ body {
 
 /*Поповер авторизированного пользователя*/
 
+.user-registered-popover {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  width: 360px;
+  background-color: #ffffff;
+  padding: 0 29px 23px 31px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 
+.user-registered-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 22px 0 30px 0;
+}
+
+.user-registered-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 22px 0;
+}
+
+.user-registered-item + .user-registered-item {
+  margin-top: 17px;
+}
+
+.user-registered-link {
+  text-decoration: none;
+  color: #3D546F;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 4px;
+}
+
+.user-registered-link:hover {
+  opacity: 0.6;
+}
+
+.user-registered-link:active {
+  opacity: 0.3;
+}
+
+.popover-button {
+  padding: 9px 42px 9px 43px;
+  margin: 0 10px 10px 0;
+}
 
 /*Навигация*/
 
@@ -456,6 +514,10 @@ body {
   width: 1400px;
   height: 70px;
   background-color: #3D546F;
+}
+
+.user-current {
+  display: flex;
 }
 
 .visually-hidden {
