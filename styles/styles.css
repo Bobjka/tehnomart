@@ -224,6 +224,7 @@ body {
 
 .header-user-enter {
   margin-left: auto;
+  position: relative;
 }
 
 .user-enter-button {
@@ -243,6 +244,159 @@ body {
   background-position: 0 -1px;
 }
 
+/*Вход в аккуант*/
+
+.user-enter-popover {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  width: 360px;
+  background-color: #ffffff;
+  padding: 0 29px 35px 31px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-enter-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 20px 0 48px 0;
+  color: #000000;
+}
+
+.button-close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 16px;
+  right: 16px;
+  background-image: url("../images/icons/close-icon.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.button-close:hover {
+  opacity: 0.6;
+}
+
+.button-close:active {
+  opacity: 0.3;
+}
+
+.user-enter-form {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+:is(.login-field, .password-field) {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 7px;
+  border: 1px solid #C5C5C5;
+  border-radius: 2px;
+  padding: 0 14px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+:is(.login-field, .password-field)::placeholder {
+  color: #000000;
+}
+
+.user-enter-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 39px 0;
+  padding: 0;
+}
+
+.user-enter-item {
+  margin-right: 13px;
+}
+
+.user-enter-link {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.button-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 10px;
+  align-items: start;
+}
+
+.button {
+  background-color: #63A63E;
+  border-radius: 2px;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 11px 35px 11px 56px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5FBB2D;
+  cursor: url("../images/icons/cursor-icon.svg"), pointer;
+}
+
+.button:active {
+  background-color: #518534;
+}
+
+.form-button {
+  background-image: url("../images/icons/enter-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 25px 11px;
+  background-size: 15px 15px;
+}
+
+.button-border {
+  font-family: "PT Sans", sans-serif;
+  color: #32425C;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid #63A63E;
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 9px 15px 9px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button-border:hover {
+  border: 2px solid #3D546F;
+  cursor: url("../images/icons/cursor-icon.svg"), pointer;
+}
+
+.button-border:active {
+  color: #C5C5C5;
+  border: 2px solid #C5C5C5;
+}
 
 /*Навигация*/
 

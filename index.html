@@ -29,6 +29,34 @@
 <!--Аккаунт-->
         <div class="header-user-enter">
           <button class="user-enter-button" type="button">ВОЙТИ</button>
+<!--          Вход в аккаунт-->
+          <div class="user-enter-popover">
+            <h2 class="user-enter-title">личный кабинет</h2>
+            <button class="button-close" type="button">
+              <span class="visually-hidden">Закрыть окно.</span>
+            </button>
+            <form class="user-enter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="email-form">Логин</label>
+              <input class="login-field" required placeholder="Логин" type="email" name="email-form" id="email-form">
+              <label class="visually-hidden" for="password-form">Пароль</label>
+              <input class="password-field" required placeholder="Пароль" type="password" name="password-form" id="password-form">
+              <ul class="user-enter-list">
+                <li class="user-enter-item">
+                  <label class="user-enter-label">
+                    <input class="" type="checkbox">
+                  </label>
+                  <a class="user-enter-link" href="#">Запомнить меня</a>
+                </li>
+                <li class="user-enter-item">
+                  <a class="user-enter-link" href="#">Забыл пароль</a>
+                </li>
+              </ul>
+              <div class="button-wrap">
+                <button class="button form-button" type="submit">Войти</button>
+                <button class="button-border registration-button" type="button">Регистрация</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
