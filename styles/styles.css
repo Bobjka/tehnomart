@@ -933,6 +933,83 @@ body {
   opacity: 0.3;
 }
 
+/*Каталог товаров*/
+
+.main-catalog {
+  width: 1170px;
+  margin: auto;
+}
+
+.main-catalog-title {
+  margin: 0 0 26px 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #293449;
+  text-transform: uppercase;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 220px;
+}
+
+.catalog-filter-title {
+  padding: 0;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.range {
+  background-color: #F7F3EC;
+  padding: 19px 20px;
+  position: relative;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.range-scale {
+  width: 180px;
+  height: 2px;
+  background-color: #3D546F;
+  position: relative;
+}
+
+.range-bar {
+  position: absolute;
+  max-width: 180px;
+  height: 2px;
+  background-color: #5FBB2D;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3D546F;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+  top: -9px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: 0;
+}
+
+
+
 /*Остальное*/
 
 .pagination-current {

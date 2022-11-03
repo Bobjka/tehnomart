@@ -203,5 +203,37 @@
       </li>
     </ul>
   </section>
+<!--  Каталог товаров-->
+  <section class="main-catalog">
+    <h2 class="visually-hidden">Каталог товаров.</h2>
+    <h4 class="main-catalog-title">Перфораторы</h4>
+    <div class="catalog-wrap">
+      <div class="catalog-filters">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Цена:</legend>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 139px">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="range-wrapper-inputs">
+            <label class="catalog-filter-label filter-label-min">Цена:
+              <input class="range-input" type="number" value="100" name="min-price">₽
+            </label>
+            <label class="catalog-filter-label filter-label-max">
+              –<input class="range-input" type="number" value="500" name="max-price">₽
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
