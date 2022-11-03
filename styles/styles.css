@@ -1039,7 +1039,7 @@ body {
 
 .catalog-filter-company {
   border: none;
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
 }
 
@@ -1101,6 +1101,12 @@ body {
   opacity: 0.3;
 }
 
+.filter-company-input[type="checkbox"]:disabled ~ .filter-company-mark,
+.filter-company-input[type="checkbox"]:disabled ~ .filter-company-label {
+  color: #000000;
+  opacity: 0.4;
+}
+
 /*Питание*/
 
 .catalog-filter-supply {
@@ -1114,7 +1120,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
 }
 
 .filter-supply-list {
@@ -1128,7 +1134,7 @@ body {
 }
 
 .filter-supply-item + .filter-supply-item {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .filter-supply-mark:before {
@@ -1149,6 +1155,11 @@ body {
   opacity: 0.3;
 }
 
+.filter-supply-input[type="radio"]:disabled ~ .filter-supply-mark,
+.filter-supply-input[type="radio"]:disabled ~ .filter-supply-label {
+  color: #000000;
+  opacity: 0.4;
+}
 
 .filter-supply-mark {
   width: 22px;
@@ -1157,6 +1168,8 @@ body {
   border: 2px solid #3D546F;
   box-sizing: border-box;
   position: absolute;
+  left: 0;
+  top: 2px;
 }
 
 .filter-supply-mark:before {
@@ -1172,6 +1185,9 @@ body {
 
 .filter-supply-label {
   padding-left: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
 }
 
 
