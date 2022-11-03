@@ -370,7 +370,7 @@ body {
 
 .button:hover {
   background-color: #5FBB2D;
-  cursor: url("../images/icons/cursor-icon.svg"), pointer;
+  cursor: pointer;
 }
 
 .button:active {
@@ -402,7 +402,7 @@ body {
 
 .button-border:hover {
   border: 2px solid #3D546F;
-  cursor: url("../images/icons/cursor-icon.svg"), pointer;
+  cursor: pointer;
 }
 
 .button-border:active {
@@ -1112,7 +1112,7 @@ body {
 .catalog-filter-supply {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 45px 0;
 }
 
 .filter-supply-title {
@@ -1188,6 +1188,29 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+}
+
+.catalog-filters-button {
+  font-family: "PT Sans", sans-serif;
+  background-color: transparent;
+  border: 2px solid #32425C;
+  padding: 9px 68px 9px 67px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #32425C;
+}
+
+.catalog-filters-button:hover {
+  opacity: 0.6;
+}
+
+.catalog-filters-button:active {
+  opacity: 0.3;
 }
 
 
