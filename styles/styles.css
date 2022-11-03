@@ -1091,13 +1091,89 @@ body {
   display: block;
 }
 
-.filter-company-input[type="checkbox"]:hover ~ .filter-company-mark {
+.filter-company-input[type="checkbox"]:hover ~ .filter-company-mark,
+.filter-company-input[type="checkbox"]:hover ~ .filter-company-label {
   opacity: 0.6;
 }
 
-.filter-company-input[type="checkbox"]:active ~ .filter-company-mark {
+.filter-company-input[type="checkbox"]:active ~ .filter-company-mark,
+.filter-company-input[type="checkbox"]:active ~ .filter-company-label {
   opacity: 0.3;
 }
+
+/*Питание*/
+
+.catalog-filter-supply {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-supply-title {
+  padding: 0;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.filter-supply-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-supply-item {
+  position: relative;
+}
+
+.filter-supply-item + .filter-supply-item {
+  margin-top: 8px;
+}
+
+.filter-supply-mark:before {
+  display: none;
+}
+
+.filter-supply-input[type="radio"]:checked ~ .filter-supply-mark:before {
+  display: block;
+}
+
+.filter-supply-input[type="radio"]:hover ~ .filter-supply-mark,
+.filter-supply-input[type="radio"]:hover ~ .filter-supply-label {
+  opacity: 0.6;
+}
+
+.filter-supply-input[type="radio"]:active ~ .filter-supply-mark,
+.filter-supply-input[type="radio"]:active ~ .filter-supply-label {
+  opacity: 0.3;
+}
+
+
+.filter-supply-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #3D546F;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.filter-supply-mark:before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background-color: #3D546F;
+}
+
+.filter-supply-label {
+  padding-left: 36px;
+}
+
 
 /*Остальное*/
 
