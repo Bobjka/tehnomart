@@ -206,7 +206,7 @@
 <!--  Каталог товаров-->
   <section class="main-catalog">
     <h2 class="visually-hidden">Каталог товаров.</h2>
-    <h4 class="main-catalog-title">Перфораторы</h4>
+    <h3 class="main-catalog-title">Перфораторы</h3>
     <div class="catalog-wrap">
 <!--      Фильтры-->
       <form class="catalog-filters" action="http://echo.htmlacademy.ru" method="get">
@@ -300,6 +300,33 @@
         </fieldset>
         <button class="catalog-filters-button" type="submit">Показать</button>
       </form>
+<!--      Сортировка-->
+      <div class="catalog-sorting-wrap">
+        <label class="catalog-sorting-title" for="select">
+          <select class="catalog-sorting-select" id="select">
+            <option value="sorting">Сортировать</option>
+            <option value="popular">По популярности</option>
+            <option value="cheap">Сначала не дорогое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+        </label>
+      </div>
+<!--      Результаты поиска-->
+      <div class="catalog-results">
+        <ul class="catalog-results-list">
+          <li class="catalog-results-item card-new">
+            <img class="perforator-img" src="images/perforators/BOSCH-BFG-3000.png" width="216" height="180" alt="BOSCH BFG 3000">
+            <h4 class="catalog-results-title">Перфоратор BOSCH<br> BFG 3000</h4>
+            <span class="old-price">22500 ₽</span>
+            <button class="catalog-results-button" type="button">
+              <span class="price">15500 ₽</span>
+              <svg class="background-button" width="140" height="40" viewBox="0 0 140 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M121.1 1.24A4 4 0 0 0 118.2 0H2.96C1.33 0 0 1.42 0 3.16v33.68C0 38.58 1.33 40 2.96 40H118.2a4 4 0 0 0 2.9-1.24l15.27-16a4 4 0 0 0 0-5.52l-15.28-16Z"/></svg>
+            </button>
+            <button class="buy-button button">Купить</button>
+            <button class="favorites-button button-border">В закладки</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
