@@ -864,7 +864,56 @@ body {
 }
 
 
+/*Пагинация слайдера*/
+
+.slider-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+}
+
+.slider-pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  line-height: 0;
+  font-size: 0;
+}
+
+.slider-pagination-item + .slider-pagination-item {
+  margin-left: 8px;
+}
+
+.slider-pagination-button {
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #FFD180;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
 /*Остальное*/
+
+.pagination-current {
+  background-color: #ffffff;
+  opacity: 1;
+}
 
 .current-slide {
   display: block;
