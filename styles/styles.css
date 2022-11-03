@@ -696,6 +696,25 @@ body {
   padding-right: 34px;
 }
 
+.main-card-item:nth-child(5) {
+  background-image: url("../images/cards/sale-card.svg");
+  background-color: #8ED78F;
+  margin-bottom: 3px;
+}
+
+.main-card-item:nth-child(5) .main-card-link {
+  padding-right: 12px;
+}
+
+.main-card-item:nth-child(6) {
+  background-image: url("../images/cards/delivery-card.svg");
+  background-color:  #FFBF47;
+}
+
+.main-card-item:nth-child(6) .main-card-link {
+  padding-right: 54px;
+}
+
 .main-card-title {
   font-weight: 700;
   max-width: 320px;
@@ -763,6 +782,12 @@ body {
 
 .card-slider-item:nth-child(1) {
   background-image: url("../images/slider/drills-slide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-slider-item:nth-child(2) {
+  background-image: url("../images/slider/perforators-slide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -856,11 +881,11 @@ body {
 }
 
 .slider-button:hover {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .slider-button:active  {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 
