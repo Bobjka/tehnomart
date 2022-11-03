@@ -950,10 +950,12 @@ body {
   text-transform: uppercase;
 }
 
+/*Цена*/
+
 .catalog-filter-group {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 39px 0;
   width: 220px;
 }
 
@@ -971,6 +973,7 @@ body {
   position: relative;
   border-radius: 2px;
   box-sizing: border-box;
+  margin-bottom: 6px;
 }
 
 .range-scale {
@@ -1008,7 +1011,93 @@ body {
   right: 0;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
 
+.range-input {
+  width: 95px;
+  height: 40px;
+  background-color: #F7F3EC;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/*Производители*/
+
+.catalog-filter-company {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-company-title {
+  padding: 0;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.filter-company-list {
+  margin: 0 0 0 1px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-company-item + .filter-company-item {
+  margin-top: 16px;
+}
+
+.filter-company {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-company-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.filter-company-mark-selected {
+  display: none;
+}
+
+.filter-company-label {
+  padding: 0 0 0 35px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.filter-company-input[type="checkbox"]:checked ~ .filter-company-mark {
+  display: none;
+}
+
+.filter-company-input[type="checkbox"]:checked ~ .filter-company-mark-selected {
+  display: block;
+}
+
+.filter-company-input[type="checkbox"]:hover ~ .filter-company-mark {
+  opacity: 0.6;
+}
+
+.filter-company-input[type="checkbox"]:active ~ .filter-company-mark {
+  opacity: 0.3;
+}
 
 /*Остальное*/
 

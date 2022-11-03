@@ -208,7 +208,9 @@
     <h2 class="visually-hidden">Каталог товаров.</h2>
     <h4 class="main-catalog-title">Перфораторы</h4>
     <div class="catalog-wrap">
-      <div class="catalog-filters">
+<!--      Фильтры-->
+      <form class="catalog-filters" action="http://echo.htmlacademy.ru" method="get">
+<!--        Цена-->
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цена:</legend>
           <div class="range">
@@ -224,15 +226,59 @@
             </div>
           </div>
           <div class="range-wrapper-inputs">
-            <label class="catalog-filter-label filter-label-min">Цена:
-              <input class="range-input" type="number" value="100" name="min-price">₽
-            </label>
-            <label class="catalog-filter-label filter-label-max">
-              –<input class="range-input" type="number" value="500" name="max-price">₽
-            </label>
+            <label class="visually-hidden" for="min-price">Минимальная цена.</label>
+            <input class="range-input" type="number" value="0" name="min-price" id="min-price">
+            <label class="visually-hidden" for="max-price">Максимальная цена.</label>
+            <input class="range-input" type="number" value="30000" name="max-price" id="max-price">
           </div>
         </fieldset>
-      </div>
+<!--        Производители-->
+        <fieldset class="catalog-filter-company">
+          <legend class="filter-company-title">Производители</legend>
+          <ul class="filter-company-list">
+            <li class="filter-company-item">
+              <label class="filter-company">
+                <input class="filter-company-input visually-hidden" type="checkbox" name="BOSCH" checked>
+                <svg class="filter-company-mark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <svg class="filter-company-mark filter-company-mark-selected" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m9.7 10.59 4.3-4.3 1.41 1.42-5.7 5.7L6 9.71l1.41-1.42 2.3 2.3Z" fill="#3D546F"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <span class="filter-company-label">BOSCH</span>
+              </label>
+            </li>
+            <li class="filter-company-item">
+              <label class="filter-company">
+                <input class="filter-company-input visually-hidden" type="checkbox" name="Interskol">
+                <svg class="filter-company-mark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <svg class="filter-company-mark filter-company-mark-selected" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m9.7 10.59 4.3-4.3 1.41 1.42-5.7 5.7L6 9.71l1.41-1.42 2.3 2.3Z" fill="#3D546F"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <span class="filter-company-label">ИНТЕРСКОЛ</span>
+              </label>
+            </li>
+            <li class="filter-company-item">
+              <label class="filter-company">
+                <input class="filter-company-input visually-hidden" type="checkbox" name="MAKIta" checked>
+                <svg class="filter-company-mark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <svg class="filter-company-mark filter-company-mark-selected" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m9.7 10.59 4.3-4.3 1.41 1.42-5.7 5.7L6 9.71l1.41-1.42 2.3 2.3Z" fill="#3D546F"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <span class="filter-company-label">MAKIta</span>
+              </label>
+            </li>
+            <li class="filter-company-item">
+              <label class="filter-company">
+                <input class="filter-company-input visually-hidden" type="checkbox" name="Dewalt">
+                <svg class="filter-company-mark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <svg class="filter-company-mark filter-company-mark-selected" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m9.7 10.59 4.3-4.3 1.41 1.42-5.7 5.7L6 9.71l1.41-1.42 2.3 2.3Z" fill="#3D546F"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <span class="filter-company-label">Dewalt</span>
+              </label>
+            </li>
+            <li class="filter-company-item">
+              <label class="filter-company">
+                <input class="filter-company-input visually-hidden" type="checkbox" name="Hitachi">
+                <svg class="filter-company-mark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <svg class="filter-company-mark filter-company-mark-selected" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m9.7 10.59 4.3-4.3 1.41 1.42-5.7 5.7L6 9.71l1.41-1.42 2.3 2.3Z" fill="#3D546F"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 0H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 18V2h16v16H2Z"/></svg>
+                <span class="filter-company-label">Hitachi</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </div>
   </section>
 </main>
